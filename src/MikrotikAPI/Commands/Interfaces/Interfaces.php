@@ -3,7 +3,8 @@
 namespace MikrotikAPI\Commands\Interfaces;
 
 use MikrotikAPI\Roar\Roar;
-use MikrotikAPI\Commands\Interfaces\Bonding,
+use MikrotikAPI\Util\SentenceUtil,
+    MikrotikAPI\Commands\Interfaces\Bonding,
     MikrotikAPI\Commands\Interfaces\EoIP,
     MikrotikAPI\Commands\Interfaces\Ethernet,
     MikrotikAPI\Commands\Interfaces\IPTunnel,
