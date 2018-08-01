@@ -25,7 +25,7 @@ use MikrotikAPI\Roar\Roar;
 
 // create a connection with Mikrotik Router
 
-$conn = Roar::connect(['<host_ip>', '<username', '<password>']);
+$conn = Roar::create(['host_ip', 'username', 'password']);
  
 if($conn->isConnected()) {
     // you have access to Commands
@@ -39,7 +39,7 @@ Getting interfaces:
 use MikrotikAPI\Roar\Roar;
 use MikrotikAPI\Commands\Interfaces;
 
-$conn = Mikrokit::connect(['<host_ip>', '<username', '<password>']);
+$conn = Roar::create(['host_ip', 'username', 'password']);
  
 if($conn->isConnected()) {
     $iComm = new Interfaces($conn);
